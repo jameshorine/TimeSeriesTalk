@@ -6,7 +6,7 @@
 #This is what you SHOULD NOT DO! 
 #This is what you SHOULD NOT DO! 
 
-beer <- read.table("/Users/jimmy/Desktop/beer_data.csv", sep=",", header=T)
+beer <- read.table("./data/quarterly-beer-production-in-aus.csv", sep=",", header=T)
 head(beer)
 Beer <- cbind(1:nrow(beer),beer$Megalitres)
 Beer2 <- cbind(1:nrow(beer),beer$Megalitres);colnames(Beer2)=c("Time", "Megalitres")
